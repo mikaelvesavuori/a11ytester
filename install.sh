@@ -47,6 +47,17 @@ if ! command -v axe &>/dev/null; then
   fi
 fi
 
+# Check for pa11y
+if ! command -v pa11y &>/dev/null; then
+  echo "pa11y could not be found"
+  read -p "Install pa11y? [y/n] " install_pa11y
+  if [[ $install_pa11y == "Y" || $install_pa11y == "y" ]]; then
+    npm install -g pa11y
+  else
+    echo "Skipping install..."
+  fi
+fi
+
 # Check for webhint
 if ! command -v hint &>/dev/null; then
   echo "Webhint could not be found"

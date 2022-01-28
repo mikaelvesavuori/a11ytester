@@ -7,6 +7,7 @@ Runs:
 - [Webhint](https://webhint.io)
 - [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Axe](https://github.com/dequelabs/axe-core)
+- [pa11y](https://pa11y.org)
 
 ## Installation
 

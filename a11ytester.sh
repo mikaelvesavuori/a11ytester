@@ -21,6 +21,7 @@ if [ -z $URL ]; then
 fi
 
 mkdir -p results/$FOLDER/axe
+mkdir -p results/$FOLDER/pa11y
 mkdir -p results/$FOLDER/lighthouse
 
 echo "Running Webhint test..."
@@ -34,8 +35,11 @@ axe $URL \
   --save results/$FOLDER/axe/results.json \
   --tags wcag21aa
 
+echo "Running pa11y test..."
+pa11y $URL >results/$FOLDER/pa11y/results.txt
+
 echo "Running Lighthouse test..."
 lighthouse $URL \
   --only-categories=accessibility \
   --output html \
-  --output-path ./results/$FOLDER/lighthouse/report.html
+  --output-path results/$FOLDER/lighthouse/report.html
