@@ -5,7 +5,7 @@
 ##############
 
 #
-# Just a script that runs a set of accessibility testing tools on a provided URL.
+# Just a few scripts that run a set of accessibility testing tools on one or more provided URLs.
 #
 # https://github.com/mikaelvesavuori/a11ytester
 # Mikael Vesavuori 2022

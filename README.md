@@ -1,6 +1,6 @@
 # a11ytester
 
-Just a script that runs a set of accessibility testing tools on a provided URL.
+Just a few scripts that run a set of accessibility testing tools on one or more provided URLs.
 
 Runs:
 
@@ -10,13 +10,25 @@ Runs:
 
 ## Installation
 
-For the scripts just clone, copy, or download `install.sh` and `a11ytester.sh` to your machine.
+For the scripts just clone, copy, or download `install.sh`, `test.sh` and `a11ytester.sh` to your machine.
 
 The installation script will set up a [`.hintrc`](https://webhint.io/docs/user-guide/configuring-webhint/summary/) configuration file and check for the presence of the required tools. If they are not installed you will be asked if you want them to be globally installed with [npm](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/).
 
+## Configuration for multiple pages
+
+If you want to test multiple pages you must first create a JSON file (`config.json`) that contains a list of URLs.
+
 ## Running `a11ytester`
 
+### Single page
+
 Run `bash a11ytester.sh https://mydomain.com` in the folder where you keep the script.
+
+### Multiple pages
+
+**Make sure you have a JSON file (`config.json`) that contains a list of URLs!**
+
+Run `bash test.sh` in the folder where you keep the script.
 
 ## Also check out
 

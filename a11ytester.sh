@@ -5,7 +5,7 @@
 ##############
 
 #
-# Just a script that runs a set of accessibility testing tools on a provided URL.
+# Just a few scripts that run a set of accessibility testing tools on one or more provided URLs.
 #
 # https://github.com/mikaelvesavuori/a11ytester
 # Mikael Vesavuori 2022
@@ -16,7 +16,7 @@ URL=$1
 FOLDER=$(echo "$URL" | sed -e 's/[^a-z0-9]//ig' -e 's/https//ig' -e 's/http//gi')
 
 if [ -z $URL ]; then
-  echo "Missing URL! Please run the script with a full URL appended, like this --> 'sh test.sh https://mydomain.com'"
+  echo "Missing URL! Please run the script with a full URL appended, like this --> 'sh a11ytester.sh https://mydomain.com'"
   exit
 fi
 
