@@ -11,6 +11,8 @@ Runs:
 
 ## Installation
 
+_Note that this entirely assumes that you are running on a Linux or Mac operating system!_
+
 For the scripts just clone, copy, or download `install.sh`, `test.sh` and `a11ytester.sh` to your machine.
 
 The installation script will set up a [`.hintrc`](https://webhint.io/docs/user-guide/configuring-webhint/summary/) configuration file and check for the presence of the required tools. If they are not installed you will be asked if you want them to be globally installed with [npm](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/) or [Homebrew](https://brew.sh).
@@ -35,5 +37,5 @@ Run `bash test.sh` in the folder where you keep the script.
 
 For testing in your IDE, consider:
 
-- https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter
-- https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint
+- [axe Accessibility Linter](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter)
+- [webhint](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint)
